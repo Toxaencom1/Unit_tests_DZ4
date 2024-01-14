@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de1e3203-868c-4816-97a0-18c74041b8af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxah/unit_test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxah/unit_test/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxah/unit_test/book/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxah/unit_test/book/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxah/unit_test/book/InMemoryBookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BookServiceTest.java" afterDir="false" />
+    <list default="true" id="de1e3203-868c-4816-97a0-18c74041b8af" name="Changes" comment="Add DZ4 task and files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxah/unit_test/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxah/unit_test/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +27,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.BookServiceTest.executor": "Coverage",
+    "JUnit.BookServiceTest.testBookRepositoryImpl.executor": "Run",
+    "JUnit.BookServiceTest.testFindAllBooks.executor": "Run",
     "JUnit.BookServiceTest.testFindBookById.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -64,7 +58,36 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BookServiceTest">
+    <configuration name="BookServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Unit_tests_DZ4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testBookRepositoryImpl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Unit_tests_DZ4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookServiceTest" />
+      <option name="METHOD_NAME" value="testBookRepositoryImpl" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceTest.testFindAllBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Unit_tests_DZ4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookServiceTest" />
+      <option name="METHOD_NAME" value="testFindAllBooks" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookServiceTest.testFindBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Unit_tests_DZ4" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,6 +100,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookServiceTest" />
+        <item itemvalue="JUnit.BookServiceTest.testBookRepositoryImpl" />
+        <item itemvalue="JUnit.BookServiceTest.testFindAllBooks" />
         <item itemvalue="JUnit.BookServiceTest.testFindBookById" />
       </list>
     </recent_temporary>
@@ -97,11 +123,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705238500998</updated>
-      <workItem from="1705238502346" duration="1539000" />
+      <workItem from="1705238502346" duration="4349000" />
     </task>
+    <task id="LOCAL-00001" summary="Add DZ4 task and files">
+      <option name="closed" value="true" />
+      <created>1705240325016</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705240325016</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add DZ4 task and files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add DZ4 task and files" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Unit_tests_DZ4$BookServiceTest.ic" NAME="BookServiceTest Coverage Results" MODIFIED="1705242515247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
