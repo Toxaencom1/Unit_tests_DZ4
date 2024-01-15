@@ -29,23 +29,31 @@ class BookServiceTest {
 
 
     @BeforeEach
-    void setup(){
+    void setup() {
         bookRepositoryMock = mock(BookRepository.class);
         bookService = new BookService(bookRepositoryMock);
     }
 
     @Test
-    void testFindBookById(){
+    void testFakeRepository() {
+        /*
+            так как InMemoryBookRepository уже является Fake имитирующий базу данных
+            его не проверяем на корректность данных
+        */
+    }
+
+    @Test
+    void testFindBookById() {
         Book book = new Book("1", "Book1", "Author1");
         when(bookRepositoryMock.findById("1")).thenReturn(book);
         Book res = bookService.findBookById("1");
 
-        verify(bookRepositoryMock,times(1)).findById("1");
-        assertEquals(book,res);
+        verify(bookRepositoryMock, times(1)).findById("1");
+        assertEquals(book, res);
     }
 
     @Test
-    void testFindAllBooks(){
+    void testFindAllBooks() {
         Book book1 = new Book("1", "Book1", "Author1");
         Book book2 = new Book("2", "Book2", "Author2");
         List<Book> bookList = new ArrayList<>();
@@ -53,7 +61,7 @@ class BookServiceTest {
         when(bookRepositoryMock.findAll()).thenReturn(bookList);
 
         List<Book> resList = bookService.findAllBooks();
-        verify(bookRepositoryMock,times(1)).findAll();
+        verify(bookRepositoryMock, times(1)).findAll();
         assertEquals(bookList, resList);
     }
 }
